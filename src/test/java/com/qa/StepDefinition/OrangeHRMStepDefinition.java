@@ -5,7 +5,11 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.qa.pages.OrangeHRMPage;
+import com.qa.Pages.OrangeHRMPage;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 
 public class OrangeHRMStepDefinition {
 
@@ -42,7 +46,7 @@ public class OrangeHRMStepDefinition {
 		OrangeOR.clickonJobLink();
 	}
 
-	@Then("^validate text – Job Title$")
+	@Then("^validate text â€“ Job Title$")
 	public void validate_text_Job_Title() {
 	    // Write code here that turns the phrase above into concrete actions
 	   String strText;
